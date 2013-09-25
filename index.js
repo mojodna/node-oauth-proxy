@@ -6,6 +6,8 @@ var http = require("http"),
 
 var request = require("request");
 
+http.globalAgent.maxSockets = Infinity;
+
 module.exports = function(options) {
   options = options || {};
 
