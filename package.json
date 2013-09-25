@@ -1,15 +1,37 @@
 {
   "name": "oauth-proxy",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "An HTTP proxy that signs OAuth 1.0a requests",
   "main": "index.js",
+  "bin": "./bin/oauth-proxy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha"
   },
-  "author": "",
-  "license": "BSD",
+  "author": "Seth Fitzsimmons <seth@mojodna.net>",
+  "license": "MIT",
+  "homepage": "https://github.com/mojodna/node-oauth-proxy",
+  "bugs": "https://github.com/mojodna/node-oauth-proxy/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mojodna/node-oauth-proxy.git"
+  },
+  "jshintConfig": {
+    "node": true,
+    "globalstrict": true,
+    "curly": true,
+    "sub": true,
+    "indent": 2,
+    "newcap": true,
+    "white": false,
+    "undef": true,
+    "unused": true,
+    "maxlen": 100
+  },
   "dependencies": {
-    "caronte": "git+https://github.com/nodejitsu/node-http-proxy.git#caronte",
-    "request": "~2.27.0"
+    "request": "~2.27.0",
+    "optimist": "~0.6.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0"
   }
 }
