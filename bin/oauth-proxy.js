@@ -12,7 +12,7 @@ var opts = require("optimist")
   .describe("p", "Proxy port")
   .alias("p", "port")
   .describe("ssl", "Make upstream requests via HTTPS")
-  .describe("help", "Display this help");
+  .describe("help", "Display this help message");
 
 var argv = opts.argv;
 
