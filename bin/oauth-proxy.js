@@ -12,13 +12,22 @@ var opts = require("optimist")
   .describe("p", "Proxy port")
   .alias("p", "port")
   .describe("ssl", "Make upstream requests via HTTPS")
+  .describe("version", "Display the version number")
   .describe("help", "Display this help message");
 
 var argv = opts.argv;
 
-if (argv.help) {
-  opts.showHelp();
-  process.exit();
+switch (true) {
+  case argv.help:
+    opts.showHelp();
+    process.exit();
+
+  case argv.version:
+    console.log("oauth-proxy v%s (request v%s, oauth-sign v%s)",
+                require("../package.json").version,
+                require("request/package.json").version,
+                require("request/node_modules/oauth-sign/package.json").version);
+    process.exit();
 }
 
 var server = require("../")({
