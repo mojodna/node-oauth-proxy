@@ -1,0 +1,15 @@
+{
+  "name": "oauth-proxy",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "caronte": "git+https://github.com/nodejitsu/node-http-proxy.git#caronte",
+    "request": "~2.27.0"
+  }
+}
