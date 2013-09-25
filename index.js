@@ -9,10 +9,10 @@ var request = require("request");
 module.exports = function(options) {
   options = options || {};
 
-  var consumerKey = options.consumerKey || process.env.OAUTH_CONSUMER_KEY,
-      consumerSecret = options.consumerSecret || process.env.OAUTH_CONSUMER_SECRET,
-      token = options.token || process.env.OAUTH_TOKEN,
-      tokenSecret = options.tokenSecret || process.env.OAUTH_TOKEN_SECRET;
+  var consumerKey = options.consumerKey || process.env.OAUTH_CONSUMER_KEY || "",
+      consumerSecret = options.consumerSecret || process.env.OAUTH_CONSUMER_SECRET || "",
+      token = options.token || process.env.OAUTH_TOKEN || "",
+      tokenSecret = options.tokenSecret || process.env.OAUTH_TOKEN_SECRET || "";
 
   if (!consumerKey || !consumerSecret) {
     console.warn("Warning: consumer key and/or secret are empty--expect the unexpected.");

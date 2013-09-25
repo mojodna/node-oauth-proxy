@@ -1,5 +1,8 @@
 # oauth-proxy
 
+[![Build
+Status](https://secure.travis-ci.org/mojodna/node-oauth-proxy.png?branch=master)](http://travis-ci.org/mojodna/node-oauth-proxy)
+
 I am an OAuth 1.0a proxy server. You can pass unsigned requests to me and
 I will sign them using OAuth before sending them to their eventual destination.
 

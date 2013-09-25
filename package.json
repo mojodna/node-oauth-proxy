@@ -32,6 +32,8 @@
     "optimist": "~0.6.0"
   },
   "devDependencies": {
-    "mocha": "~1.13.0"
+    "mocha": "~1.13.0",
+    "async": "~0.2.9",
+    "connect": "~2.9.0"
   }
 }
