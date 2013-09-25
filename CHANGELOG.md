@@ -1,4 +1,4 @@
-v0.1.2
+v0.1.2: Sep 26 2013
 ===================
 
 * Set `http.globalAgent.maxSockets` to `Infinity` to prevent artificial
